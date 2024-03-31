@@ -24,14 +24,14 @@
 /* Hexagon */
 :root {
     --sqrt3: 1.7320508075688772;
-    --edgeSize: 100px;
+    --edgeSize: 80px;
     --hexWidth: calc(var(--edgeSize) * 2);
     --hexHeight: calc(var(--sqrt3) * var(--edgeSize));
 }
 
 /* Display */
 :root {
-    --borderHover: 15px;
+    --borderHover: 10px;
 }
 
 /* Easing */

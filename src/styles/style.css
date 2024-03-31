@@ -1,3 +1,5 @@
+/* Import bootstrap.css */
+@import url('../../node_modules/bootstrap/dist/css/bootstrap.min.css');
 /* Import variables.css */
 @import url('parts/variables.css');
 
@@ -10,9 +12,15 @@
 /* Import color.css */
 @import url('colors/index.css');
 
+/* Import main.css */
+@import url('main.css');
+
 /* Import navbar.css */
 @import url('navbar.css');
 
 /* Import componentstyling */
 @import url('parts/hexagon-menu.css');
 @import url('parts/hexagon.css');
+
+/* Import pages styleing */
+@import url('pages/home.css');

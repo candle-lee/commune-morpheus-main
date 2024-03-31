@@ -1,0 +1,39 @@
+
+.page-title {
+  /* width: 100%; */
+  margin:auto;
+}
+
+.page-title img {
+  margin-bottom: 20px;
+}
+
+.page-title h2 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.page-title p {
+  font-size: 20px;
+  /* font-weight: 600; */
+  font-family: var(--open-sans); /* Assuming $open-sans is defined in variables.css */
+  position: relative;
+  color: rgba(var(--light-dark), 0.47); /* Using variable --light-dark */
+}
+
+.page-title .title-bg {
+  color: rgba(var(--light-dark), 0.07); /* Using variable --light-dark */
+  font-size: 84px;
+  left: 0;
+  letter-spacing: -4px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: -40%;
+  z-index: -1;
+  transform: translateY(-50%);
+}

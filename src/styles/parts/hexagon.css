@@ -6,7 +6,7 @@
     width: var(--hexWidth);
     height: var(--hexHeight);
     float: right;
-    margin-right: -29px;
+    margin-right: -22px;
     z-index: 0;
     position: relative;
     transform: rotate(30deg);
@@ -23,7 +23,7 @@
 }
 .hexagon-item:hover .hex-item:first-child {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .hexagon-item:hover .hex-item:first-child div::before,
 .hexagon-item:hover .hex-item:first-child div::after {
@@ -38,12 +38,12 @@
 
 .hexagon-menu .hexagon-item:nth-child(3),
 .hexagon-menu .hexagon-item:nth-child(4) {
-    transform: rotate(30deg) translate(-86px, 22px);
+    transform: rotate(30deg) translate(-70px, 18px);
 }
 
 .hexagon-menu .hexagon-item:nth-child(5),
 .hexagon-menu .hexagon-item:nth-child(6) {
-    transform: rotate(30deg) translate(-24px, -42px);
+    transform: rotate(30deg) translate(-20px, -33px);
 }
 
 /* Contains 3 div that makes the hexagon */
@@ -99,12 +99,12 @@
 .hex-content {
     color: var(--light);
     display: block;
-    height: 180px;
+    height: 140px;
     margin: 0 auto;
     position: relative;
     text-align: center;
     transform: rotate(-30deg);
-    width: 156px;
+    width: 121px;
 }
 .hex-content .hex-content-inner {
     left: 50%;
@@ -128,9 +128,9 @@
     text-transform: uppercase;
 }
 .hex-content svg {
-    left: -7px;
+    left: -9px;
     position: absolute;
-    top: -13px;
+    top: -11px;
     transform: scale(0.87);
     z-index: -1;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
