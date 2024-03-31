@@ -1,0 +1,18 @@
+/* Import variables.css */
+@import url('parts/variables.css');
+
+/* Import base.css */
+@import url('parts/base.css');
+
+/* Import dark.css */
+@import url('dark.css');
+
+/* Import color.css */
+@import url('colors/index.css');
+
+/* Import navbar.css */
+@import url('navbar.css');
+
+/* Import componentstyling */
+@import url('parts/hexagon-menu.css');
+@import url('parts/hexagon.css');

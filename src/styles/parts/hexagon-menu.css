@@ -1,0 +1,20 @@
+@media only screen and (min-width: 1400px) {
+    .hexagon-menu {
+        width: calc(var(--hexHeight)* 3 - 10px);
+    }
+}
+@media only screen and (min-width: 1199px) and (max-width: 1400px) {
+    .hexagon-menu {
+        width: calc(var(--hexHeight)* 3 - 10px);
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hexagon-menu {
+        width: calc(var(--hexHeight)* 3 - 10px);
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 992px) {
+    .hexagon-menu {
+        width: calc(var(--hexHeight)* 3 - 10px);
+    }
+}

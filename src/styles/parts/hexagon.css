@@ -1,0 +1,140 @@
+/* End of container */
+
+/* Contains 2 hexagons (.hex) */
+.hexagon-item {
+    cursor: pointer;
+    width: var(--hexWidth);
+    height: var(--hexHeight);
+    float: right;
+    margin-right: -29px;
+    z-index: 0;
+    position: relative;
+    transform: rotate(30deg);
+}
+.hexagon-item:first-child {
+    margin-left: 0;
+}
+.hexagon-item:hover {
+    z-index: 1;
+}
+.hexagon-item:hover .hex-item:last-child {
+    opacity: 1;
+    transform: scale(1.3);
+}
+.hexagon-item:hover .hex-item:first-child {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.hexagon-item:hover .hex-item:first-child div::before,
+.hexagon-item:hover .hex-item:first-child div::after {
+    height: var(--borderHover);
+}
+.hexagon-item:hover .hex-item {
+    background-color: var(--primary-color);
+}
+.hexagon-item:hover .hex-content svg {
+    transform: scale(0.97);
+}
+
+.hexagon-menu .hexagon-item:nth-child(3),
+.hexagon-menu .hexagon-item:nth-child(4) {
+    transform: rotate(30deg) translate(-86px, 22px);
+}
+
+.hexagon-menu .hexagon-item:nth-child(5),
+.hexagon-menu .hexagon-item:nth-child(6) {
+    transform: rotate(30deg) translate(-24px, -42px);
+}
+
+/* Contains 3 div that makes the hexagon */
+.hex-item {
+    position: absolute;
+    top: 0;
+    left: calc(var(--edgeSize) / 2);
+    width: var(--edgeSize);
+    height: var(--hexHeight);
+}
+.hex-item:first-child {
+    z-index: 0;
+    transform: scale(0.9);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hex-item:last-child {
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+}
+.hex-item div {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    width: var(--edgeSize);
+    height: var(--hexHeight);
+}
+.hex-item div::before,
+.hex-item div::after {
+    background-color: var(--light-dark);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hex-item div::before{
+    bottom: 0;
+}
+.hex-item div::after{
+    top: 0;
+}
+.hex-item div:nth-child(1) {
+    transform: rotate(0deg);
+}
+.hex-item div:nth-child(2) {
+    transform: rotate(60deg);
+}
+.hex-item div:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+.hex-content {
+    color: var(--light);
+    display: block;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    transform: rotate(-30deg);
+    width: 156px;
+}
+.hex-content .hex-content-inner {
+    left: 50%;
+    margin: -3px 0 0 2px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.hex-content .icon {
+    display: block;
+    font-size: 36px;
+    line-height: 30px;
+    margin-bottom: 11px;
+}
+.hex-content .title {
+    display: block;
+    font-family: var(--open-sans);
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.hex-content svg {
+    left: -7px;
+    position: absolute;
+    top: -13px;
+    transform: scale(0.87);
+    z-index: -1;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hex-content:hover {
+    color: var(--light);
+}

@@ -1,0 +1,46 @@
+.dark {
+    background-color: var(--light-dark);
+}
+
+.dark .page-home .overlay {
+    background-color: rgba(14, 17, 24, var(--overlay-bg-opacity-dark));
+}
+
+.dark .page-title h2 {
+    color: var(--light);
+}
+
+.dark .page-title p {
+    color: rgba(255, 255, 255, 0.27);
+}
+
+.dark .page-title .title-bg {
+    color: rgba(70, 88, 124, 0.09);
+}
+
+.dark .section-title h3::before {
+    background-color: var(--light);
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark .about-author .author-desc p {
+    color: var(--light);
+}
+
+.dark .service-hex .st0 {
+    fill: transparent;
+}
+
+.dark .service-hex:hover .st0 {
+    fill: var(--light);
+}
+
+.dark .testimonials .text,
+.dark .btn-border {
+    border-color: var(--light-dark);
+}

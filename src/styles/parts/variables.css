@@ -1,0 +1,47 @@
+/* Typography */
+:root {
+    --font-stack: "Libre Baskerville", serif;
+    --open-sans: "Open Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+    --primary-color: #fa6862;
+    --light-dark: #1e2530;
+    --light: #fff;
+    --text-color: #ababab;
+    --title-color: #1e2530;
+    --border-color: #eee;
+
+    /* Theme colors */
+    --theme-green: #16ba3a;
+    --theme-blue: #02b7ce;
+    --theme-red: #fa6862;
+    --theme-orange: #f3a36d;
+    --theme-yellow: #ffc338;
+}
+
+/* Hexagon */
+:root {
+    --sqrt3: 1.7320508075688772;
+    --edgeSize: 100px;
+    --hexWidth: calc(var(--edgeSize) * 2);
+    --hexHeight: calc(var(--sqrt3) * var(--edgeSize));
+}
+
+/* Display */
+:root {
+    --borderHover: 15px;
+}
+
+/* Easing */
+:root {
+    --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+    --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Homepage */
+:root {
+    --overlay-bg-opacity: 0.81;
+    --overlay-bg-opacity-dark: 0.92;
+}

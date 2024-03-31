@@ -1,0 +1,42 @@
+.red .btn-primary,
+.red .loading-mask,
+.red .section-title h3::after,
+.red .hexagon-item:hover .hex-item div::before,
+.red .hexagon-item:hover .hex-item div::after,
+.red .progress .bar,
+.red .contact-social li:hover span {
+    background-color: var(--theme-red);
+}
+
+.red .nicescroll-cursors {
+    background: var(--theme-red) !important;
+}
+
+.red .primary,
+.red .link:hover,
+.red .filter .active,
+.red .works-item h4,
+.red .msg-success {
+    color: var(--theme-red);
+}
+
+.red .testimonials .owl-dot.active {
+    border-color: var(--theme-red);
+}
+
+.red .site-wrapper,
+.red .contact-social li:hover span::after,
+.red .contact-social-hex:hover::before {
+    border-top-color: var(--theme-red);
+}
+
+.red .filter .active,
+.red .contact-social li:hover span::before,
+.red .contact-social-hex:hover::after {
+    border-bottom-color: var(--theme-red);
+}
+
+.red .service-hex:hover .fill,
+.red .service-hex:hover .st1 {
+    fill: var(--theme-red);
+}
