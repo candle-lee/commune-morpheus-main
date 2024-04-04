@@ -105,6 +105,7 @@
     text-align: center;
     transform: rotate(-30deg);
     width: 121px;
+    font-size: 18px;
 }
 .hex-content .hex-content-inner {
     left: 50%;
@@ -121,8 +122,8 @@
 }
 .hex-content .title {
     display: block;
-    font-family: var(--open-sans);
-    font-size: 14px;
+    font-family: var(--font-impact);
+    font-size: inherit;
     letter-spacing: 1px;
     line-height: 24px;
     text-transform: uppercase;
@@ -137,4 +138,5 @@
 }
 .hex-content:hover {
     color: var(--light);
+    font-size: 21px;
 }

@@ -34,7 +34,7 @@
 
 .nav-bar .nav-container .nav-menu .container a {
     color: var(--primary-color);
-    font-family: var(--font-stack);
+    font-family: var(--font-impact);
     text-decoration: none;
     cursor: pointer;
 }

@@ -2,8 +2,9 @@
     background-color: var(--light-dark);
 }
 
-.dark .page-home .overlay {
+.dark .overlay {
     background-color: rgba(14, 17, 24, var(--overlay-bg-opacity-dark));
+    background-size: cover;
 }
 
 .dark .page-title h2 {
@@ -15,7 +16,7 @@
 }
 
 .dark .page-title .title-bg {
-    color: rgba(70, 88, 124, 0.24);
+    color: rgba(94, 114, 134, 0.34);
 }
 
 .dark .section-title h3::before {

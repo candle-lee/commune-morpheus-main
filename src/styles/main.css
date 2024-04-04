@@ -9,7 +9,7 @@
 }
 
 .page-title h2 {
-  font-size: 48px;
+  font-size: 60px;
   margin-bottom: 25px;
   position: relative;
   z-index: 0;
@@ -20,7 +20,7 @@
 .page-title p {
   font-size: 20px;
   /* font-weight: 600; */
-  font-family: var(--open-sans); /* Assuming $open-sans is defined in variables.css */
+  font-family: var(--font-impact); /* Assuming $open-sans is defined in variables.css */
   position: relative;
   color: rgba(var(--light-dark), 0.47); /* Using variable --light-dark */
 }
@@ -33,7 +33,84 @@
   line-height: 0.7;
   position: absolute;
   right: 0;
-  top: -40%;
+  top: -24%;
   z-index: -1;
   transform: translateY(-50%);
+}
+
+.overlay {
+  padding: 15px 0;
+}
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-title h3 {
+  display: inline-block;
+  position: relative;
+}
+
+/* .section-title h3::before,
+.section-title h3::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  bottom: 8px;
+  left: calc(100% + 14px);
+} */
+
+.section-title h3::before {
+  background-color: var(--light-dark);
+  width: 96px;
+  bottom: 14px;
+}
+
+.section-title h3::after {
+  background-color: var(--primary-color);
+  width: 73px;
+}
+
+.section-title.light h3 {
+  color: var(--light);
+}
+
+.section-title.light h3::before {
+  background-color: var(--light);
+}
+.section-title h3 {
+  margin-top: 45px;
+  font-family: var(--font-impact);
+  font-size: 50px;
+  color: var(--primary-color);
+}
+
+.container>.row {
+  padding: 35px 0;
+}
+
+.content-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.content-flex .subtitle {
+  margin-bottom: 20px;
+}
+
+.content-flex .subtitle h4 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.content-flex .subcontent {
+  font-size: 24px;
+  text-align: left;
+  padding-left: 90px;
+}
+
+.content-flex .button {
+  margin-top: 20px;
 }

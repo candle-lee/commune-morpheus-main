@@ -1,6 +1,7 @@
 /* Typography */
 :root {
     --font-stack: "Libre Baskerville", serif;
+    --font-impact: "impact", sans-serif;
     --open-sans: "Open Sans", sans-serif;
 }
 
@@ -9,7 +10,7 @@
     --primary-color: #fa6862;
     --light-dark: #1e2530;
     --light: #fff;
-    --text-color: #ababab;
+    --text-color: #f2f1f1;
     --title-color: #1e2530;
     --border-color: #eee;
 
@@ -45,3 +46,24 @@
     --overlay-bg-opacity: 0.81;
     --overlay-bg-opacity-dark: 0.92;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #111;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
