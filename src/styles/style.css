@@ -19,8 +19,9 @@
 /* Import navbar.css */
 @import url('navbar.css');
 
-/* Import nextButton.css */
-@import url('nextButton.css');
+/* Import Button.css */
+@import url('detailButton.css');
+@import url('launchAppButton.css');
 
 /* Import componentstyling */
 @import url('parts/hexagon-menu.css');

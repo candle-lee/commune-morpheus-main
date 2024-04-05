@@ -9,7 +9,7 @@ const HexagonMenu = () => {
             <Hexagon title="AgentAI" icon="tf-tools-2" url="#agentAi" />
             <Hexagon title="Tokenomics" icon="tf-tools" url="#tokenomics" />
             <Hexagon title="Docs" icon="tf-briefcase2" url="/" />
-            <Hexagon title="Contribution" icon="tf-chat" url="#contribution" />
+            <Hexagon title="Contributor" icon="tf-chat" url="#contributor" />
         </div>
     );
 }

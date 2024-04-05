@@ -1,0 +1,132 @@
+:root {
+    --border-style: 2px solid rgba(0, 0, 0, 0.8);
+    --c-black: rgba(0, 0, 0, 0.8);
+    --c-text: #f6d8d1;
+    --c-button: #9a5e52;
+    --c-hover-button: #f95738;
+    --c-orange-light: #f9c2b8;
+  }
+  
+  .animated-button {
+    background-color: var(--primary-color);
+    border: unset;
+    color: var(--c-text);
+    font-family: "Exo 2", sans-serif;
+    letter-spacing: 1px;
+    padding: 1rem 2rem;
+    position: relative;
+    text-transform: uppercase;
+    transition-timing-function: ease;
+    transition-duration: 0.125s;
+    transition-property: background-color, color;
+  }
+  
+  .animated-button span {
+    height: 100%;
+    position: absolute;
+    display: block;
+  }
+  
+  .animated-button span::before,
+  .animated-button span::after {
+    content: "";
+    height: 2rem;
+    opacity: 0;
+    position: absolute;
+    transition-timing-function: ease;
+    transition-duration: 0.25s;
+    transition-property: opacity, transform;
+    width: 2rem;
+    z-index: -1;
+  }
+
+  .animated-button span::before,
+  .animated-button span::after {
+    border-color: var(--c-hover-button);
+  }
+  
+  .animated-button span::before {
+    border-top: var(--border-style);
+  }
+  
+  .animated-button span::after {
+    border-bottom: var(--border-style);
+  }
+  
+  .animated-button span:first-of-type {
+    left: 0;
+    top: 0;
+  }
+  
+  .animated-button span:first-of-type::before,
+  .animated-button span:first-of-type::after {
+    border-left: var(--border-style);
+    left: -1rem;
+    border-color: var(--c-hover-button);
+  }
+  
+  .animated-button span:first-of-type::before {
+    transform: translate3d(1rem, 1rem, 0);
+  }
+  
+  .animated-button span:first-of-type::after {
+    transform: translate3d(1rem, -1rem, 0);
+  }
+  
+  .animated-button span:last-of-type {
+    right: 0;
+    top: 0;
+  }
+  
+  .animated-button span:last-of-type::before,
+  .animated-button span:last-of-type::after {
+    border-right: var(--border-style);
+    right: -1rem;
+    border-color: var(--c-hover-button);
+  }
+  
+  .animated-button span:last-of-type::before {
+    transform: translate3d(-1rem, 1rem, 0);
+  }
+  
+  .animated-button span:last-of-type::after {
+    transform: translate3d(-1rem, -1rem, 0);
+  }
+  
+
+  .animated-button {
+    cursor: pointer;
+  }
+
+  .animated-button:hover {
+    background-color: var(--c-hover-button);
+    color: var(--c-orange-light);
+  }
+
+  .animated-button:hover span:first-of-type:before{
+    opacity: 1;
+    z-index: 1;
+    transform: translate3d(-24px, -25px, 0) !important;
+    transition-duration: 0.25s;
+  }
+  
+  .animated-button:hover span:last-of-type::before{
+    opacity: 1;
+    z-index: 1;
+    transform: translate3d(24px, -25px, 0) !important;
+    transition-duration: 0.25s;
+  }
+
+  .animated-button:hover span:first-of-type:after {
+    opacity: 1;
+    z-index: 1;
+    transform: translate3d(-24px, 55px, 0) !important;
+    transition-duration: 0.25s;
+  }
+
+  .animated-button:hover span:last-of-type:after {
+    opacity: 1;
+    z-index: 1;
+    transform: translate3d(24px, 55px, 0) !important;
+    transition-duration: 0.25s;
+  }

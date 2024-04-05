@@ -1,9 +1,9 @@
 import agentAIImage from "../assets/background_3.jpg";
-import DetailButton from "../components/DetailButton";
+import LaunchAppButton from "../components/LaunchAppButton";
 
 const AgentAI = () => {
     return (
-        <section id="agentAi">
+        <section id="agentAi" className="bg-primary bg-gradient">
             <div className="overlay"
             //   style={{backgroundImage : `linear-gradient(rgba(1,1,2,0.85), rgba(1,1,2,0.6)), url(${backgroundImage})`}}
             >
@@ -17,7 +17,7 @@ const AgentAI = () => {
                                 <div className="subcontent">You can use AgentAI and enjoy your crypto life.</div>
                                 <div className="subcontent">AgentAI helps you make a decision when you are trading and staking.</div>
                                 <div className="subcontent">AgentAI provides crypto related information to you and make you have good-understanding about crypto.</div>
-                                <div className="button"><DetailButton/></div>
+                                <div className="button"><LaunchAppButton/></div>
                             </div>
                         </div>
                         <div className=" col-12 col-md-6 image">

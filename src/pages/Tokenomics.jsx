@@ -1,22 +1,9 @@
 import React from "react";
-import tokenomicsImage from "../assets/background_5.jpg";
+// import tokenomicsImage from "../assets/background_5.jpg";
 import DetailButton from "../components/DetailButton";
+import PieChart from "../components/PieChart";
 
 const Tokenomics = () => {
-    const chartData = [
-        ["tokenomics", "rewords"],
-        ["developer", 30],
-        ["compute", 30],
-        ["capital", 30],
-        ["maintain", 10]
-    ]
-
-    const chartOption = {
-        legend: "none",
-        pieSliceText: "label",
-        pieStartAngle: 100
-    }
-
     return (
         <section id = "tokenomics" className="page-tokenomics">
             <div className="overlay"
@@ -28,7 +15,8 @@ const Tokenomics = () => {
                     </div>
                     <div className="tokenomics row">
                         <div className=" col-12 col-md-6 image">
-                            <div className="">
+                            <div className="chart-div">
+                                <PieChart/>
                             </div>
                         </div>
                         <div className=" col-12 col-md-6 content">

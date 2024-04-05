@@ -45,3 +45,11 @@
 .dark .btn-border {
     border-color: var(--light-dark);
 }
+
+.dark .card {
+    background-color: #3c2629;
+}
+
+.dark .card .h5 {
+    color: #be6060;
+}

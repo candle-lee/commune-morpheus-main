@@ -114,3 +114,36 @@
 .content-flex .button {
   margin-top: 20px;
 }
+
+.card {
+  padding: 15px 10px;
+}
+
+.card .h5 {
+  margin: 5px 0;
+}
+
+pre {
+  font-size: 16px;
+  overflow: auto;
+  padding: 10px;
+  /* background-color: #f8f8f8; */
+  color: aliceblue;
+  /* border: 1px solid #ddd; */
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  text-align:justify;
+}
+
+.piechart-card {
+  background-color: inherit !important;
+}
