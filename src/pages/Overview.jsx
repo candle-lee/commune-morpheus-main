@@ -1,7 +1,7 @@
 
 import backgroundImage from "../assets/background_2.jpg";
-import contributorImage from "../assets/background_1.jpg";
-import userImage from "../assets/background_3.jpg";
+import contributorImage from "../assets/overview1.png";
+import userImage from "../assets/overview2.png";
 import DetailButton from "../components/DetailButton";
 
 const Overview = () => {

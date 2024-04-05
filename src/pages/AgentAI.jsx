@@ -1,4 +1,4 @@
-import agentAIImage from "../assets/background_4.jpg";
+import agentAIImage from "../assets/background_3.jpg";
 import DetailButton from "../components/DetailButton";
 
 const AgentAI = () => {
@@ -9,21 +9,20 @@ const AgentAI = () => {
             >
                 <div className="container">
                     <div className="section-title">
-                        <h3>Tokenomics</h3>
+                        <h3>AgentAI</h3>
                     </div>
                     <div className="agentAi row">
-                        <div className=" col-12 col-md-6 image">
-                            <div className="">
-                                <img src={agentAIImage} alt="agentAi_image" width={500} height={400}  />
-                            </div>
-                        </div>
                         <div className=" col-12 col-md-6 content">
                             <div className="content-flex">
-                                <div className="subtitle"><h4>AgentAI</h4></div>
                                 <div className="subcontent">You can use AgentAI and enjoy your crypto life.</div>
                                 <div className="subcontent">AgentAI helps you make a decision when you are trading and staking.</div>
                                 <div className="subcontent">AgentAI provides crypto related information to you and make you have good-understanding about crypto.</div>
                                 <div className="button"><DetailButton/></div>
+                            </div>
+                        </div>
+                        <div className=" col-12 col-md-6 image">
+                            <div className="">
+                                <img src={agentAIImage} alt="agentAi_image" width={500} height={400}  />
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import HexagonMenu from "../components/HexagonMenu/HexagonMenu";
-import backgroundImage from "../assets/background_4.jpg";
+import backgroundImage from "../assets/home_background.jpg";
 
 const Home = () => {
     return (
