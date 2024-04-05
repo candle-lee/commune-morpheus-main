@@ -147,3 +147,15 @@ pre {
 .piechart-card {
   background-color: inherit !important;
 }
+
+.highcharts-credits {
+  display: none;
+}
+
+.highcharts-background {
+  display: none;
+}
+
+.highcharts-title {
+  display: none;
+}

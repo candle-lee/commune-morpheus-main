@@ -3,6 +3,7 @@ import Overview from "./Overview"
 import Tokenomics from "./Tokenomics"
 import AgentAI from "./AgentAI"
 import Contributor from "./Contributor"
+import Footer from "./Footer"
 
 const Main = () => {
     return (
@@ -12,6 +13,7 @@ const Main = () => {
             <Tokenomics/>
             <AgentAI/>
             <Contributor/>
+            <Footer/>
         </div>
     )
 }

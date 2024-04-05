@@ -1,4 +1,4 @@
-import agentAIImage from "../assets/background_3.jpg";
+import agentAIImage from "../assets/agentAI.png";
 import LaunchAppButton from "../components/LaunchAppButton";
 
 const AgentAI = () => {

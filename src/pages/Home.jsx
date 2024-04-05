@@ -9,9 +9,9 @@ const Home = () => {
                     <div className="home-header">
                         <HexagonMenu />
                         <div class="page-title home text-center">
-                            <h2>CommuneAI 
+                            <h2>Commune AI 
                                 <span class="primary"> Morpheus</span> 
-                                <span class="title-bg">COMMUNEAI</span>
+                                <span class="title-bg">COMMUNE AI</span>
                             </h2>
                             <p>Anyone can be a contributor, anyone can be a enjoyer</p>
                         </div>

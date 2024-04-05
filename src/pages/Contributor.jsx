@@ -1,5 +1,7 @@
 import LaunchAppButton from "../components/LaunchAppButton";
-import agentAIImage from "../assets/background_3.jpg";
+import developerImage from "../assets/developer.png";
+import computeImage from "../assets/compute.png";
+import capitalImage from "../assets/capital.png";
 
 const Contributor = () => {
     return (
@@ -23,7 +25,7 @@ const Contributor = () => {
                                         get rewards in $COMMOR.
                                     </pre>
                                 </div>
-                                <img src={agentAIImage} alt="agentAi_image" height={300}/>
+                                <img src={developerImage} alt="agentAi_image" height={300}/>
                             </div>
                         </div>
                         <div className=" col-12 col-md-4 ">
@@ -37,7 +39,7 @@ const Contributor = () => {
                                         get rewards in $COMMOR.
                                     </pre>
                                 </div>
-                                <img src={agentAIImage} alt="agentAi_image" height={300}/>
+                                <img src={computeImage} alt="agentAi_image" height={300}/>
                             </div>
                         </div>
                         <div className=" col-12 col-md-4 ">
@@ -51,7 +53,7 @@ const Contributor = () => {
                                         get rewards in $COMMOR.
                                     </pre>
                                 </div>
-                                    <img src={agentAIImage} alt="agentAi_image" height={300}/>
+                                    <img src={capitalImage} alt="agentAi_image" height={300}/>
                                 </div>
                         </div>
                     </div>

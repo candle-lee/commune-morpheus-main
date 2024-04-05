@@ -1,45 +1,65 @@
 import React, { useState } from 'react';
-import { Chart } from 'primereact/chart';
+import HighchartsReact from "highcharts-react-official";
+import Highcharts from "highcharts";
 
 const PieChart = () => {
-    const [chartData] = useState({
-        labels: ['developer', 'compute', 'capital', 'maintain'],
-        datasets: [
-            {
-                data: [30, 30, 30, 10],
-                backgroundColor: [
-                    "#42A5F5",
-                    "#66BB6A",
-                    "#FFA726",
-                    "#2288D4"
-                ],
-                hoverBackgroundColor: [
-                    "#64B5F6",
-                    "#81C784",
-                    "#FFB74D",
-                    "#3498DF"
-                ]
-            }
-        ]
-    });
+    const colors = Highcharts.getOptions().colors.map((c, i) =>
+        Highcharts.color(Highcharts.getOptions().colors[0])
+            .brighten((i - 3) / 7)
+            .get()
+    );
 
-    const [lightOptions] = useState({
-        plugins: {
-            legend: false,
-            datalabels: {
-                color: '#fff',
-                anchor: 'end',
-                align: 'start',
-                formatter: (value, context) => {
-                    return `${context.chart.data.labels[context.dataIndex]}: ${value}%`;
+    const options = {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Browser market shares in February, 2022',
+            align: 'left'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                colors,
+                borderRadius: 5,
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b><br>{point.percentage:.1f} %',
+                    distance: -50,
+                    filter: {
+                        property: 'percentage',
+                        operator: '>',
+                        value: 4
+                    }
                 }
-            },
-        }
-    });
+            }
+        },
+        series: [{
+            name: 'Devision',
+            data: [
+                { name: 'developer', y: 30 },
+                { name: 'compute', y: 30 },
+                { name: 'capital', y: 30 },
+                { name: 'maintain', y: 10 }
+            ]
+        }]
+    };
 
     return (
         <div className="card justify-content-center piechart-card">
-            <Chart type="pie" data={chartData} options={lightOptions} />
+            <HighchartsReact highcharts={Highcharts} options={options} />
         </div>
     )
 }
